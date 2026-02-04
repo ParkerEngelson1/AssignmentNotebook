@@ -24,7 +24,7 @@ struct AddAssignmentView: View {
                 }
                 TextField("Description", text: $description)
                 DatePicker("Due Date", selection: $dueDate, displayedComponents: .date)
-                    .navigationBarTitle("Add new To-Do Item", displayMode: .inline)
+                    .navigationBarTitle("Add Assignment", displayMode: .inline)
                     .navigationBarItems(trailing: Button("Save") {
                         if course.count > 0, description.count > 0 {
                             let item = AssignmentItem(course: course, description: description, dueDate: dueDate)
